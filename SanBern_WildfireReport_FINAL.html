@@ -510,7 +510,7 @@
     document.getElementById('report').classList.remove('visible');
     document.getElementById('printBtn').style.display = 'none';
 
-    const queryUrl = `${FEATURE_SERVICE}/query?where=FID=${oid}&outFields=*&returnGeometry=true&outSR=4326&f=json`;
+    const queryUrl = \${FEATURE_SERVICE}/query?objectIds=${oid}&outFields=*&returnGeometry=true&outSR=4326&f=json`;`
 
     try {
       const res  = await fetch(queryUrl);
@@ -624,7 +624,7 @@
         minScale: 0,
         maxScale: 0,
         layerDefinition: {
-          definitionExpression: `FID = ${selectedOid}`,
+          definitionExpression: `OBJECTID = ${selectedOid}`,
           drawingInfo: {
             renderer: {
               type: 'simple',
