@@ -431,181 +431,16 @@
     <div class="map-label" id="mapLabel"></div>
   </div>
 
-  <div class="rpt-body">
-
-    <!-- PROPERTY -->
+ <div class="rpt-body">
     <div class="section">
-      <div class="section-title">Property</div>
+      <div class="section-title">Earthquake Risk Details</div>
       <div class="field-grid">
         <div class="field">
-          <span class="field-label">Parcel Number</span>
-          <span class="field-value mono" id="fParcel">—</span>
-        </div>
-        <div class="field">
-          <span class="field-label">Land Type</span>
-          <span class="field-value" id="fLandType">—</span>
-        </div>
-        <div class="field">
-          <span class="field-label">Acreage</span>
-          <span class="field-value" id="fAcreage">—</span>
-        </div>
-        <div class="field">
-          <span class="field-label">Land Slope</span>
-          <span class="field-value" id="fSlope">—</span>
-        </div>
-        <div class="field">
-          <span class="field-label">Land Value</span>
-          <span class="field-value" id="fLandVal">—</span>
-        </div>
-        <div class="field">
-          <span class="field-label">Improvement Value</span>
-          <span class="field-value" id="fImprVal">—</span>
+          <span class="field-label">Ground Shaking Chance (100 Yrs)</span>
+          <span class="field-value large" id="fRange">—</span>
         </div>
       </div>
     </div>
-
-    <!-- STRUCTURE -->
-    <div class="section">
-      <div class="section-title">Structure Details</div>
-      <div class="field-grid three-col">
-        <div class="field">
-          <span class="field-label">Total Sq Ft</span>
-          <span class="field-value large" id="fSqFt">—</span>
-        </div>
-        <div class="field">
-          <span class="field-label">Year Built</span>
-          <span class="field-value large mono" id="fYear">—</span>
-        </div>
-        <div class="field">
-          <span class="field-label">Stories</span>
-          <span class="field-value large" id="fStories">—</span>
-        </div>
-        <div class="field">
-          <span class="field-label">Bedrooms</span>
-          <span class="field-value" id="fBeds">—</span>
-        </div>
-        <div class="field">
-          <span class="field-label">Bathrooms</span>
-          <span class="field-value" id="fBaths">—</span>
-        </div>
-        <div class="field">
-          <span class="field-label">Basement</span>
-          <span class="field-value" id="fBasement">—</span>
-        </div>
-        <div class="field">
-          <span class="field-label">Floor 2 Sq Ft</span>
-          <span class="field-value" id="fFloor2">—</span>
-        </div>
-        <div class="field">
-          <span class="field-label">Floor 3 Sq Ft</span>
-          <span class="field-value" id="fFloor3">—</span>
-        </div>
-        <div class="field">
-          <span class="field-label">Basement Sq Ft</span>
-          <span class="field-value" id="fBsmtSqFt">—</span>
-        </div>
-        <div class="field">
-          <span class="field-label">Construction Type</span>
-          <span class="field-value" id="fConst">—</span>
-        </div>
-        <div class="field">
-          <span class="field-label">Roof Type</span>
-          <span class="field-value" id="fRoof">—</span>
-        </div>
-        <div class="field">
-          <span class="field-label">Swimming Pool</span>
-          <span class="field-value" id="fPool">—</span>
-        </div>
-        <div class="field">
-          <span class="field-label">Height (ft)</span>
-          <span class="field-value" id="fHeight">—</span>
-        </div>
-        <div class="field">
-          <span class="field-label">Elevation (ft)</span>
-          <span class="field-value" id="fElev">—</span>
-        </div>
-        <div class="field">
-          <span class="field-label">Footprint Area (sq ft)</span>
-          <span class="field-value" id="fArea">—</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- UTILITIES -->
-    <div class="section">
-      <div class="section-title">Utilities &amp; Infrastructure</div>
-      <div class="field-grid">
-        <div class="field">
-          <span class="field-label">Water Source</span>
-          <span class="field-value" id="fWater">—</span>
-        </div>
-        <div class="field">
-          <span class="field-label">Electric Source</span>
-          <span class="field-value" id="fElectric">—</span>
-        </div>
-        <div class="field">
-          <span class="field-label">Natural Gas Source</span>
-          <span class="field-value" id="fGas">—</span>
-        </div>
-        <div class="field">
-          <span class="field-label">Fire Hazard Nuisance</span>
-          <span class="field-value" id="fFireHaz">—</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- WHIZ ZONE DETAIL -->
-    <div class="section">
-      <div class="section-title">WHIZ Zone Detail — Defensible Space</div>
-
-      <!-- Risk Summary Banner -->
-      <div id="whizRiskBanner" style="border:2px solid #ccc;border-radius:4px;padding:14px 16px;
-        text-align:center;margin-bottom:14px;background:#f9f9f9;">
-        <div style="font-size:11px;color:#666;font-family:'IBM Plex Mono',monospace;
-          letter-spacing:0.1em;text-transform:uppercase;margin-bottom:6px;">📊 Risk Assessment Summary</div>
-        <div id="whizRiskLabel" style="font-size:22px;font-weight:800;font-family:'IBM Plex Sans',sans-serif;
-          margin-bottom:6px;">—</div>
-        <div id="whizRiskDetail" style="font-size:12px;color:#666;font-family:'IBM Plex Mono',monospace;">—</div>
-      </div>
-
-      <!-- Immediate Zone -->
-      <div id="whizZone5" style="background:#fff5f5;border-left:4px solid #ff4444;
-        border-radius:3px;padding:12px;margin-bottom:8px;">
-        <div style="font-weight:700;font-size:13px;font-family:'IBM Plex Sans',sans-serif;margin-bottom:3px;">
-          🚨 IMMEDIATE ZONE (0–5 ft) <span id="whizBadge5" style="display:inline-block;background:#ff4444;
-            color:#fff;padding:2px 8px;border-radius:10px;font-size:11px;margin-left:6px;font-weight:700;"></span>
-        </div>
-        <div style="font-size:11px;color:#cc0000;font-weight:600;font-family:'IBM Plex Sans',sans-serif;
-          margin-bottom:6px;">⚠️ Critical Defense Zone</div>
-        <div id="whizList5" style="font-size:12px;line-height:1.8;font-family:'IBM Plex Sans',sans-serif;"></div>
-      </div>
-
-      <!-- Intermediate Zone -->
-      <div id="whizZone30" style="background:#fff8f0;border-left:4px solid #ff9933;
-        border-radius:3px;padding:12px;margin-bottom:8px;">
-        <div style="font-weight:700;font-size:13px;font-family:'IBM Plex Sans',sans-serif;margin-bottom:3px;">
-          🔶 INTERMEDIATE ZONE (5–30 ft) <span id="whizBadge30" style="display:inline-block;background:#ff9933;
-            color:#fff;padding:2px 8px;border-radius:10px;font-size:11px;margin-left:6px;font-weight:700;"></span>
-        </div>
-        <div style="font-size:11px;color:#cc6600;font-weight:600;font-family:'IBM Plex Sans',sans-serif;
-          margin-bottom:6px;">⚡ Moderate Risk Zone</div>
-        <div id="whizList30" style="font-size:12px;line-height:1.8;font-family:'IBM Plex Sans',sans-serif;"></div>
-      </div>
-
-      <!-- Extended Zone -->
-      <div id="whizZone100" style="background:#fffff0;border-left:4px solid #cccc00;
-        border-radius:3px;padding:12px;margin-bottom:4px;">
-        <div style="font-weight:700;font-size:13px;font-family:'IBM Plex Sans',sans-serif;margin-bottom:3px;">
-          🟡 EXTENDED ZONE (30–100 ft) <span id="whizBadge100" style="display:inline-block;background:#cccc00;
-            color:#fff;padding:2px 8px;border-radius:10px;font-size:11px;margin-left:6px;font-weight:700;"></span>
-        </div>
-        <div style="font-size:11px;color:#997700;font-weight:600;font-family:'IBM Plex Sans',sans-serif;
-          margin-bottom:6px;">📏 Reduced Risk Zone</div>
-        <div id="whizList100" style="font-size:12px;line-height:1.8;font-family:'IBM Plex Sans',sans-serif;"></div>
-      </div>
-
-    </div>
-
   </div><!-- /rpt-body -->
 
   <div class="rpt-footer">
@@ -615,7 +450,7 @@
 </div><!-- /report -->
 
 <script>
-  const FEATURE_SERVICE = 'https://services6.arcgis.com/BStAUXLYRr0TgXhT/arcgis/rest/services/BuildingFootprints_SanBernCounty_Wildfire3Zones/FeatureServer/2';
+  const FEATURE_SERVICE = 'https://services1.arcgis.com/gGHDlz6USftL5Pau/arcgis/rest/services/Chance_of_potentially_damaging_ground_shaking_in_100_years/FeatureServer/0';
 
   // AGOL print service (standard Esri hosted print)
   const PRINT_SERVICE = 'https://utility.arcgisonline.com/arcgis/rest/services/Utilities/PrintingTools/GPServer/Export%20Web%20Map%20Task/execute';
@@ -709,92 +544,9 @@
       setStatus('Fetching map image…', 'rgba(255,255,255,0.5)');
       await loadMapImage(geom, attr.FULLADDR || attr.ParcelNbr_AssessorDataJoin || 'Property', attr.OBJECTID, attr.ParcelNumb || '');
 
-      // ── PROPERTY ────────────────────────────
-      document.getElementById('fParcel').innerHTML    = fmt(attr.ParcelNbr_AssessorDataJoin || attr.ParcelNumb);
-      document.getElementById('fLandType').innerHTML  = fmt(attr.LandType_Assessor);
-      document.getElementById('fAcreage').innerHTML   = fmtAcre(attr.ACREAGE);
-      document.getElementById('fSlope').innerHTML     = fmt(attr.LandSlope_Assessor);
-      document.getElementById('fLandVal').innerHTML   = fmtCurrency(attr.LAND_VALUE);
-      document.getElementById('fImprVal').innerHTML   = fmtCurrency(attr.IMPR_VALUE);
-
-      // ── STRUCTURE ───────────────────────────
-      document.getElementById('fSqFt').innerHTML    = fmtSqFt(attr.TotalSqFootage_Assessor);
-      document.getElementById('fYear').innerHTML    = fmt(attr.CONST_YEAR);
-      document.getElementById('fStories').innerHTML = fmtNum(attr.NumberStories);
-      document.getElementById('fBeds').innerHTML    = fmtNum(attr.NumBedrooms_Assessor);
-      document.getElementById('fBaths').innerHTML   = fmtNum(attr.NumBathrooms_Assessor, 1);
-      document.getElementById('fBasement').innerHTML = fmt(attr.BasementFlag);
-      document.getElementById('fFloor2').innerHTML  = fmtSqFt(attr.Floor2SqFt_Assessor);
-      document.getElementById('fFloor3').innerHTML  = fmtSqFt(attr.Floor3SqFt_Assessor);
-      document.getElementById('fBsmtSqFt').innerHTML= fmtSqFt(attr.BasementSqFt_Assessor);
-      document.getElementById('fConst').innerHTML   = fmt(attr.ConstructionType_Assessor);
-      document.getElementById('fRoof').innerHTML    = fmt(attr.RoofType_Assessor);
-      document.getElementById('fPool').innerHTML    = fmt(attr.SwimmingPoolType_Assessor);
-      document.getElementById('fHeight').innerHTML  = fmtNum(attr.Height, 1);
-      document.getElementById('fElev').innerHTML    = fmtNum(attr.Elevation, 1);
-      document.getElementById('fArea').innerHTML    = fmtSqFt(attr.Area);
-
-      // ── UTILITIES ───────────────────────────
-      document.getElementById('fWater').innerHTML   = fmt(attr.WaterSource_Assessor);
-      document.getElementById('fElectric').innerHTML= fmt(attr.ElectricSource_Assessor);
-      document.getElementById('fGas').innerHTML     = fmt(attr.NaturalGasSource_Assessor);
-      document.getElementById('fFireHaz').innerHTML = fmt(attr.FireHazardNuisance_Assessor);
-
-      // ── WHIZ ZONE DETAIL ────────────────────
-      const sv5   = attr.ShortVeg_5FtZone   || 0;
-      const mv5   = attr.MedVeg_5FtZone     || 0;
-      const hv5   = attr.HighVeg_5FtZone    || 0;
-      const sv30  = attr.ShortVeg_30FtZone  || 0;
-      const mv30  = attr.MedVeg_30FtZone    || 0;
-      const hv30  = attr.HighVeg_30FtZone   || 0;
-      const sv100 = attr.ShortVeg_100FtZone || 0;
-      const mv100 = attr.MedVeg_100FtZone   || 0;
-      const hv100 = attr.HighVeg_100FtZone  || 0;
-
-      const count5ft   = sv5 + mv5 + hv5;
-      const count30ft  = sv30 + mv30 + hv30;
-      const count100ft = sv100 + mv100 + hv100;
-      const totalVeg   = count5ft + count30ft + count100ft;
-
-      // Risk classification — matching original popup logic
-      let riskLevel = 'MINIMAL'; let riskColor = '#44aa44'; let riskIcon = '🟢';
-      if (count5ft > 1)                          { riskLevel = 'HIGH RISK';     riskColor = '#ff4444'; riskIcon = '🔴'; }
-      else if (count30ft >= 2)                   { riskLevel = 'MODERATE-HIGH'; riskColor = '#ff6600'; riskIcon = '🟠'; }
-      else if (count30ft > 1 || count100ft >= 2) { riskLevel = 'MODERATE';      riskColor = '#ff9933'; riskIcon = '🟡'; }
-      else if (count100ft > 0)                   { riskLevel = 'LOW';           riskColor = '#ffcc00'; riskIcon = '🟡'; }
-
-      // Risk banner
-      const banner = document.getElementById('whizRiskBanner');
-      banner.style.borderColor = riskColor;
-      document.getElementById('whizRiskLabel').innerHTML =
-        `<span style="color:${riskColor}">${riskIcon} ${riskLevel}</span>`;
-      document.getElementById('whizRiskDetail').textContent =
-        `Total Vegetation Types: ${totalVeg}  ·  🚨 Immediate: ${count5ft}  🔶 Intermediate: ${count30ft}  🟡 Extended: ${count100ft}`;
-
-      // Helper — populates a zone card
-      function buildZone(badgeId, listId, count, sv, mv, hv) {
-        const badge = document.getElementById(badgeId);
-        if (count > 0) {
-          badge.textContent = count;
-        } else {
-          badge.style.display = 'none';
-        }
-        const list = document.getElementById(listId);
-        if (count === 0) {
-          list.innerHTML = '<span style="color:#2e7d32;font-weight:700;">✅ Clear — No vegetation present</span>';
-        } else {
-          let html = '';
-          if (sv) html += '• 🌿 Short Vegetation<br>';
-          if (mv) html += '• 🌳 Medium Vegetation<br>';
-          if (hv) html += '• 🌲 High Vegetation<br>';
-          list.innerHTML = html;
-        }
-      }
-
-      buildZone('whizBadge5',   'whizList5',   count5ft,   sv5,   mv5,   hv5);
-      buildZone('whizBadge30',  'whizList30',  count30ft,  sv30,  mv30,  hv30);
-      buildZone('whizBadge100', 'whizList100', count100ft, sv100, mv100, hv100);
-
+      // ── DATA EXTRACTION ────────────────────────────
+      document.getElementById('fRange').innerHTML = fmt(attr.range_cont);
+      
       // ── FOOTER ──────────────────────────────
       document.getElementById('rptGenerated').textContent =
         `Generated: ${new Date().toLocaleString()}`;
@@ -866,130 +618,29 @@
         extent: { xmin, ymin, xmax, ymax, spatialReference: { wkid: 4326 } },
         spatialReference: { wkid: 102100 }
       },
-      operationalLayers: [
-
-        // Layer 1: All parcels except selected — white outline, no fill
-        {
-          url: 'https://services.arcgis.com/aA3snZwJfFkVyDuP/arcgis/rest/services/San_Bernardino_County_Parcel_Dataset/FeatureServer/0',
-          opacity: 1,
-          minScale: 0,
-          maxScale: 0,
-          layerDefinition: {
-            definitionExpression: notApnExpr,
-            drawingInfo: {
-              renderer: {
-                type: 'simple',
-                symbol: {
-                  type: 'esriSFS',
-                  style: 'esriSFSSolid',
-                  color: [0, 0, 0, 0],
-                  outline: {
-                    type: 'esriSLS',
-                    style: 'esriSLSSolid',
-                    color: [255, 255, 255, 210],
-                    width: 1.2
-                  }
-                }
-              }
-            }
-          }
-        },
-
-        // Layer 2: Selected parcel — red outline, thicker, no fill
-        {
-          url: 'https://services.arcgis.com/aA3snZwJfFkVyDuP/arcgis/rest/services/San_Bernardino_County_Parcel_Dataset/FeatureServer/0',
-          opacity: 1,
-          minScale: 0,
-          maxScale: 0,
-          layerDefinition: {
-            definitionExpression: apnExpr,
-            drawingInfo: {
-              renderer: {
-                type: 'simple',
-                symbol: {
-                  type: 'esriSFS',
-                  style: 'esriSFSSolid',
-                  color: [0, 0, 0, 0],
-                  outline: {
-                    type: 'esriSLS',
-                    style: 'esriSLSSolid',
-                    color: [220, 30, 30, 255],
-                    width: 2.8
-                  }
-                }
-              }
-            }
-          }
-        },
-
-        // Layer 3: All building footprints except selected — grey outline, no fill
-        {
-          url: 'https://services6.arcgis.com/BStAUXLYRr0TgXhT/arcgis/rest/services/BuildingFootprints_SanBernCounty_Wildfire3Zones/FeatureServer/2',
-          opacity: 1,
-          minScale: 0,
-          maxScale: 0,
-          layerDefinition: {
-            definitionExpression: `OBJECTID <> ${selectedOid}`,
-            drawingInfo: {
-              renderer: {
-                type: 'simple',
-                symbol: {
-                  type: 'esriSFS',
-                  style: 'esriSFSSolid',
-                  color: [0, 0, 0, 0],
-                  outline: {
-                    type: 'esriSLS',
-                    style: 'esriSLSSolid',
-                    color: [200, 200, 200, 200],
-                    width: 0.8
-                  }
-                }
-              }
-            }
-          }
-        },
-
-        // Layer 4: Selected building — white outline only, transparent fill
-        {
-          url: 'https://services6.arcgis.com/BStAUXLYRr0TgXhT/arcgis/rest/services/BuildingFootprints_SanBernCounty_Wildfire3Zones/FeatureServer/2',
-          opacity: 1,
-          minScale: 0,
-          maxScale: 0,
-          layerDefinition: {
-            definitionExpression: `OBJECTID = ${selectedOid}`,
-            drawingInfo: {
-              renderer: {
-                type: 'simple',
-                symbol: {
-                  type: 'esriSFS',
-                  style: 'esriSFSSolid',
-                  color: [0, 0, 0, 0],
-                  outline: {
-                    type: 'esriSLS',
-                    style: 'esriSLSSolid',
-                    color: [255, 255, 255, 255],
-                    width: 1.2
-                  }
-                }
+      operationalLayers: [{
+        url: FEATURE_SERVICE,
+        opacity: 1,
+        minScale: 0,
+        maxScale: 0,
+        layerDefinition: {
+          definitionExpression: `OBJECTID = ${selectedOid}`,
+          drawingInfo: {
+            renderer: {
+              type: 'simple',
+              symbol: {
+                type: 'esriSFS', style: 'esriSFSSolid', color: [255, 0, 0, 100],
+                outline: { color: [255, 0, 0, 255], width: 2 }
               }
             }
           }
         }
-
-      ],
+      }],
       baseMap: {
-        baseMapLayers: [
-          {
-            url: 'https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer',
-            opacity: 1
-          }
-        ],
+        baseMapLayers: [{ url: 'https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer', opacity: 1 }],
         title: 'World Imagery'
       },
-      exportOptions: {
-        outputSize: [840, 300],
-        dpi: 96
-      }
+      exportOptions: { outputSize: [840, 300], dpi: 96 }
     };
 
     // ── Call AGOL print service ────────────────────────────────────
