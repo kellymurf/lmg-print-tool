@@ -402,7 +402,7 @@
 <div id="toolbar">
   <span class="brand">🔥 SanBern Wildfire Home Ignition Zones · Property Report</span>
   <div class="controls">
-    <label for="objectIdInput">OBJECTID</label>
+    <label for="objectIdInput">FID</label>
     <input type="number" id="objectIdInput" placeholder="e.g. 42" min="1"/>
     <button id="loadBtn" onclick="loadReport()">Load Feature</button>
     <span id="statusMsg"></span>
@@ -413,8 +413,8 @@
 <!-- ── EMPTY STATE ── -->
 <div id="emptyState">
   <div class="empty-icon">🏠</div>
-  <div class="empty-title">Enter an OBJECTID to generate a report</div>
-  <div class="empty-sub">Enter the OBJECTID of a building footprint feature from the San Bernardino Wildfire Home Defense Zone layer, then click <strong>Load Feature</strong>.</div>
+  <div class="empty-title">Enter an FID to generate a report</div>
+  <div class="empty-sub">Enter the FID of a building footprint feature from the San Bernardino Wildfire Home Defense Zone layer, then click <strong>Load Feature</strong>.</div>
 </div>
 
 <!-- ── REPORT (populated by JS) ── -->
@@ -510,7 +510,7 @@
     document.getElementById('report').classList.remove('visible');
     document.getElementById('printBtn').style.display = 'none';
 
-    const queryUrl = `${FEATURE_SERVICE}/query?where=OBJECTID=${oid}&outFields=*&returnGeometry=true&outSR=4326&f=json`;
+    const queryUrl = `${FEATURE_SERVICE}/query?where=FID=${oid}&outFields=*&returnGeometry=true&outSR=4326&f=json`;
 
     try {
       const res  = await fetch(queryUrl);
@@ -542,7 +542,7 @@
 
       // ── MAP IMAGE via ArcGIS Print Service ──
       setStatus('Fetching map image…', 'rgba(255,255,255,0.5)');
-      await loadMapImage(geom, attr.FULLADDR || attr.ParcelNbr_AssessorDataJoin || 'Property', attr.OBJECTID, attr.ParcelNumb || '');
+      await loadMapImage(geom, 'Earthquake Risk Area', attr.FID, '');
 
       // ── DATA EXTRACTION ────────────────────────────
       document.getElementById('fRange').innerHTML = fmt(attr.range_cont);
@@ -624,7 +624,7 @@
         minScale: 0,
         maxScale: 0,
         layerDefinition: {
-          definitionExpression: `OBJECTID = ${selectedOid}`,
+          definitionExpression: `FID = ${selectedOid}`,
           drawingInfo: {
             renderer: {
               type: 'simple',
